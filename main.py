@@ -1,8 +1,8 @@
-from game.game import Game
+from pre_game.game import Game
 
-snake_length = 3 
-grid_height = 5 
-grid_width = 5 
+snake_length = 6 
+grid_height = 10 
+grid_width = 10
 
 if __name__ == "__main__":
 
