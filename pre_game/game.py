@@ -1,6 +1,6 @@
 import os 
-from game.snake import Snake
-from game.grid import Grid
+from pre_game.snake import Snake
+from pre_game.grid import Grid
 
 class Game:
     def __init__(self, snake_length, grid_height, grid_width):
@@ -8,7 +8,7 @@ class Game:
         self.snake = Snake(snake_length = snake_length)
         self.grid = Grid(height = grid_height, width = grid_width)
 
-    def start_game(self):
+    def start_game_player(self):
 
         self.grid.create_fruit()
         self.grid.update_grid(self.snake.snake_position)
